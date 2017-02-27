@@ -1,0 +1,77 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Material">
+        <!-- Customize your theme here. -->
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:navigationBarColor">@color/primary</item>
+        <item name="android:windowSoftInputMode">stateHidden</item>
+    </style>
+
+    <style name="team_style">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:descendantFocusability">beforeDescendants</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <style name="team_name">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:inputType">textCapWords|textNoSuggestions</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:hint">Enter team name...</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:backgroundTint">@color/primary</item>
+    </style>
+
+    <style name="score_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">56sp</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="remaining_text">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <style name="remaining_number">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <style name="button_style">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="operator_style">
+        <item name="android:layout_height">34dp</item>
+        <item name="android:layout_width">34dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginLeft">80dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+</resources>

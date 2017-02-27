@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.prabhjotmattu1.basketballscorekeeper.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp">
+
+            <LinearLayout style="@style/team_style">
+
+                <EditText
+                    android:id="@+id/edit_name1"
+                    style="@style/team_name" />
+
+                <TextView
+                    android:id="@+id/score1"
+                    style="@style/score_style"
+                    android:text="0" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/timeout_text1"
+                        style="@style/remaining_text"
+                        android:text="Timeouts Remaining" />
+
+                    <TextView
+                        android:id="@+id/timeout_number1"
+                        style="@style/remaining_number"
+                        android:layout_below="@id/timeout_text1"
+                        android:text="6" />
+
+                    <Button
+                        android:id="@+id/timeout_button1"
+                        style="@style/operator_style"
+                        android:onClick="timeoutTaken"
+                        android:layout_below="@id/timeout_text1"
+                        android:text="\u2012"
+                        />
+
+                    <TextView
+                        android:id="@+id/foul_text1"
+                        style="@style/remaining_text"
+                        android:layout_below="@id/timeout_number1"
+                        android:text="Total Fouls" />
+
+                    <TextView
+                        android:id="@+id/foul_number1"
+                        style="@style/remaining_number"
+                        android:layout_below="@id/foul_text1"
+                        android:text="0" />
+
+                    <Button
+                        android:id="@+id/foul_button1"
+                        style="@style/operator_style"
+                        android:layout_below="@id/foul_text1"
+                        android:onClick="foulCommitted"
+                        android:text="+" />
+
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/three_button1"
+                    style="@style/button_style"
+                    android:onClick="threePointer"
+                    android:text="3-pointer" />
+
+                <Button
+                    android:id="@+id/two_button1"
+                    style="@style/button_style"
+                    android:onClick="twoPointer"
+                    android:text="2-pointer" />
+
+                <Button
+                    android:id="@+id/freethrow_button1"
+                    style="@style/button_style"
+                    android:onClick="freeThrow"
+                    android:text="free throw" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp">
+
+            <LinearLayout style="@style/team_style">
+
+                <EditText
+                    android:id="@+id/edit_name2"
+                    style="@style/team_name" />
+
+                <TextView
+                    android:id="@+id/score2"
+                    style="@style/score_style"
+                    android:text="0" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/remaining_timeout2"
+                        style="@style/remaining_text"
+                        android:text="Timeouts Remaining" />
+
+                    <TextView
+                        android:id="@+id/timeout_number2"
+                        style="@style/remaining_number"
+                        android:layout_below="@id/remaining_timeout2"
+                        android:layout_centerHorizontal="true"
+                        android:text="6" />
+
+                    <Button
+                        android:id="@+id/timeout_button2"
+                        style="@style/operator_style"
+                        android:onClick="timeoutTaken"
+                        android:text="\u2012"
+                        android:layout_below="@id/remaining_timeout2"/>
+
+                    <TextView
+                        android:id="@+id/foul_text2"
+                        style="@style/remaining_text"
+                        android:layout_below="@id/timeout_number2"
+                        android:text="Total Fouls" />
+
+                    <TextView
+                        android:id="@+id/foul_number2"
+                        style="@style/remaining_number"
+                        android:layout_below="@id/foul_text2"
+                        android:text="0" />
+
+                    <Button
+                        android:id="@+id/foul_button2"
+                        style="@style/operator_style"
+                        android:onClick="foulCommitted"
+                        android:text="+"
+                        android:layout_below="@id/foul_text2"/>
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/three_button2"
+                    style="@style/button_style"
+                    android:onClick="threePointer"
+                    android:text="3-pointer" />
+
+                <Button
+                    android:id="@+id/two_button2"
+                    style="@style/button_style"
+                    android:onClick="twoPointer"
+                    android:text="2-pointer" />
+
+                <Button
+                    android:id="@+id/freethrow_button2"
+                    style="@style/button_style"
+                    android:onClick="freeThrow"
+                    android:text="free throw" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:id="@+id/time_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6:00"
+                android:textSize="50dp"
+                android:layout_marginLeft="16dp"/>
+
+            <Button
+                android:id="@+id/start_button"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/time_left"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:text="start"
+                android:onClick="startTimer"
+                />
+
+            <Button
+                android:id="@+id/stop_button"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/start_button"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="stop"
+               />
+
+            <TextView
+                android:id="@+id/quarter_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quarter:"
+                android:textSize="12sp"
+                android:layout_below="@id/start_button"
+
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/quarter_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/quarter_text"
+                android:layout_below="@id/start_button"
+                android:text="1"
+                android:textSize="12sp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
